@@ -1,0 +1,454 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: #f4f1eb;
+  }
+  
+  h1 {
+    font-family: 'Quattrocento', serif;
+    
+  }
+  
+  h2 {
+   font-family: 'Quattrocento', serif;
+  
+  }
+  
+  p {
+    font-size: 20px;
+    counter-reset: black;
+  }
+  
+  .artist {
+   margin-top: 30px;
+   margin-bottom: 50px;
+  }
+  
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .bio p {
+    width: 350px;
+  }
+  
+  .intro1 {
+    background-image: url(../images/hero.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    padding-top:100px;
+    padding-bottom:100px;
+    
+  }
+  
+  .jumbotron {
+    background-color: #f4f1eb;
+    height: 300px;
+    margin-bottom: 0px;
+  }
+  
+  .intro {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  .intro h1 {
+    padding-bottom: 20px;
+  }
+  
+  .card {
+    margin: 10px 10px;
+  }
+  
+  input[type='checkbox'] {
+    display: none;
+  }
+  
+  
+  body{min-height:200vh;}
+  
+  .navbar {
+    height: auto;
+    font-size: 16px;
+    color: #343440;
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  
+  
+  
+  .navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;  
+    
+  }
+  
+  .navbar-brand img {
+   width: 380px;
+   height: auto;
+  
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    color:#343440 !important;
+    padding-left: 20px !important;
+  }
+  
+  .nav-link:hover {
+    color:#bb2025 !important;
+    text-decoration: underline;
+  }
+  
+  .contactartist {
+    position: absolute;
+    bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -15px;
+  
+  }
+  
+  .contactartist a {
+    font-size: 22px;
+    font-weight: bold;
+    
+  }
+  
+  .contactartist a:hover {
+    text-decoration: underline;
+    color:#bb2025;
+  }
+  
+  .desc {
+    padding-left: 15px;
+  }
+  
+  /*masonry*/
+  
+  section {
+    column-width: 400px;
+  }
+  
+  section img {
+    width: 100%;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .artistimg {
+    float: right;
+  }
+  
+  .imgzoom {
+    transition: transform 250ms;
+  }
+  
+  .imgzoom:hover {
+    transform: scale(1.02, 1.02);
+  }
+  
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 100px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #bb20255f; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #bb2025; /* Add a dark-grey background on hover */
+  }
+  
+  .thankyou {
+   margin-top: 200px;
+    width: 500px;
+    background-color: white;
+    border: solid 1px #343440;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  
+  .homeft {
+    background-color: #343440;
+    padding-top: 20px;
+  }
+  
+  .tile img{
+    width:75px;
+    height: auto;
+  }
+  
+  .ftnav {
+    text-align: right;
+    padding-top: 10px;
+    line-height: 15px;
+  }
+  
+  .ftnav p {
+    font-size: 16px;
+  }
+  
+  .ftnav a {
+    color: #f4f1eb;
+  }
+  
+  .ftnav a:hover {
+   color: #bb2025;
+   text-decoration: underline;
+  }
+  
+  /*--thank you pop starts here--*/
+  .thank-you-pop{
+      width:100%;
+       padding:20px;
+      text-align:center;
+  }
+  .thank-you-pop img{
+      width:150px;
+      height:auto;
+      margin:0 auto;
+      display:block;
+      margin-bottom:25px;
+  }
+  
+  .thank-you-pop h1{
+      font-size: 42px;
+      margin-bottom: 25px;
+      color:#5C5C5C;
+  }
+  .thank-you-pop p{
+      font-size: 20px;
+      margin-bottom: 27px;
+       color:#5C5C5C;
+  }
+  
+  .thank-you-pop a{
+      display: inline-block;
+      margin: 0 auto;
+      padding: 9px 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 14px;
+      background-color: #8BC34A;
+      border-radius: 17px;
+  }
+  .thank-you-pop a i{
+      margin-right:5px;
+      color:#fff;
+  }
+  #ignismyModal .modal-header{
+      border:0px;
+  }
+  
+  .readmorebio a {
+    font-weight: bold;
+    color: #343440;
+  }
+  
+  .readmorebio a:hover {
+    color: #bb2025;
+    text-decoration: underline;
+  }
+  
+  
+  
+  .moises img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .social img {
+    width: 75px;
+    height: auto;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+  
+  /*Media query - mobile*/
+  
+  @media (max-width: 992px) { 
+  
+    .contactartist {
+      position: relative;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    .artistimg {
+     float:left;
+     padding-bottom: 20px;
+    }
+  
+    .navbar-brand {
+      transition: none;
+      
+      top: 20px;
+    }
+  
+    .navbar-brand img {
+      width: 200px;
+      height: 45px;
+    
+          
+     }
+    
+     .artistpiccontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+     }
+  
+     .artistpiccontainer img {
+      width: 100%;
+     }
+  
+     .homeft {
+      flex-direction: column;
+     }
+     
+     .ftnav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-top: 15px;
+    }
+  
+    
+  
+    .tilecontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+     
+     }
+   
+    .tile img{
+      width:50px;
+      height: 50px;
+      
+    }
+  
+    #myBtn {
+      bottom: 150px;
+    }
+  
+    .moises {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      
+    }
+  
+   
+  
+   .jumbotron .intro1 h6{
+    animation: none;
+   }
+  
+  
+  
+    .readmorebio {
+      margin-left: 50px;
+    }
+  
+  }
+  
+  .anim-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+  }
+  
+  .anim-text img {
+    width: 100%;
+    margin: auto;
+    display: block;
+  
+  }
+  
+  h6 {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    font-family: 'Quattrocento', serif;
+    font-weight:300;
+    font-size:38px;
+  }
+    
+    h6:first-of-type { 
+      width: 220px;
+      animation: showup 10s ;
+      
+    }
+    
+    h6:last-of-type {
+      width:0px;
+      animation: reveal 14s ;
+      animation-fill-mode: forwards;
+    }
+    
+    h6:last-of-type span {
+      margin-left:0px;
+      animation: slidein 14s ;
+    }
+    
+    @keyframes showup {
+        0% {opacity:0;}
+        20% {opacity:1;}
+    }
+    
+    @keyframes slidein {
+        0% { margin-left:-800px; }
+        20% { margin-left:-800px; }
+        35% { margin-left:0px; }
+        100% { margin-left:0px; }
+    }
+    
+    @keyframes reveal {
+        0% {opacity:0;width:0px;}
+        20% {opacity:1;width:0px;}
+        30% {width:380px;}
+        80% {opacity:1;}
+        100% {opacity:1;width:380px;}
+        
+    }
+  
+  

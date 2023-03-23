@@ -1,0 +1,495 @@
+<!doctype html>
+
+<html lang="en">
+  
+    <head>
+    
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+        
+         <title>Diaspora</title>
+    
+         <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    
+        <!--on scroll change nav background color-->
+        <script>
+            $(window).scroll(function(){
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+            });
+        </script>
+
+        <script defer src="app.js"></script>
+    </head>
+
+    <header>
+    
+        <nav class="navbar navbar-expand-lg navbar-light navbar-default">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/diaspora-logo.png" alt="">
+            </a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="nav navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">Welcome</a>
+                    <a class="nav-item nav-link" href="#">Previous Artists</a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="jumbotron intro1">
+            <h6>Showcasing</h6> 
+            <h6><span>up and coming artists.</span></h6>
+        </div>
+            
+        <div class="container intro">
+                <div class="row">
+                    <div class="col">
+                        <div class="intro"><h1>Featuring</h1>
+                            <h2 style="font-size: 46px;">Moisés Cruz Báez</h2>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="container-fluid artist">
+            <div class="row justify-content-evenly artist">
+                <div class="col-md-6 artistpiccontainer">
+                    <div class="artistimg"><img src="./images/moises.png"></div>
+                </div>
+                <div class="col-md-6 bio">
+                    <div class="artistpiccontainer">
+                        <p>He is the "mastermind" and CEO of Mampostea'o. Moisés is a graphic designer born in Caguas P.R, with a master's degree in 
+                        Advertising and other cool stuff from prestigious European universities. He began his adventure in the world of 
+                        advertising working for the San Juan Star newspaper, later moving to GFR Media where he was a designer for the 
+                        newspaper Primera Hora and El Nuevo Día.
+                        </p>
+                    </div>
+                    <div class="readmorebio"><a href="moises.html"><p>Read Full Bio</p></a></div>
+                </div>
+            
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <section>
+                
+                <img title="Click to View Art Details" class="imgzoom" src="./images/Constelacion.png" alt="" data-toggle="modal" data-target="#imgmod2-modal-lg" class="img-fluid"/>
+                <img title="Click to View Art Details" class="imgzoom" src="./images/Con las manos llenas.png" alt="" data-toggle="modal" data-target="#imgmod1-modal-lg" class="img-fluid" />
+                <img title="Click to View Art Details" class="imgzoom" src="./images/El Descenso.png" alt="" data-toggle="modal" data-target="#imgmod3-modal-lg" class="img-fluid" />
+                <img title="Click to View Art Details" class="imgzoom" src="./images/Platanal de Danny.png" alt="" data-toggle="modal" data-target="#imgmod6-modal-lg" class="img-fluid"/>
+                <img title="Click to View Art Details" class="imgzoom" src="./images/Las Chinas de Millo.png" alt="" data-toggle="modal" data-target="#imgmod5-modal-lg" class="img-fluid" />
+                <img title="Click to View Art Details" class="imgzoom" src="./images/Untitiled.png" alt="" data-toggle="modal" data-target="#imgmod9-modal-lg" class="img-fluid" />
+                <img title="Click to View Art Details" class="imgzoom" src="./images/Heliconia.png" alt="" data-toggle="modal" data-target="#imgmod7-modal-lg" class="img-fluid" />
+                <img title="Click to View Art Details" class="imgzoom" src="./images/Yito Gauguin.png" alt="" data-toggle="modal" data-target="#imgmod8-modal-lg" class="img-fluid" />
+                <img title="Click to View Art Details" class="imgzoom" src="./images/El Fruto.png" alt="" data-toggle="modal" data-target="#imgmod4-modal-lg" class="img-fluid" />
+            
+                
+            </section>
+        </div>
+        
+        <!-- Modal Con las manos llenas -->
+        <div class="modal fade" id="imgmod1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1350px!important;" role="document">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="./images/Con las manos llenas.png" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="modal-header">
+                                <h5>Artwork Title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="desc">
+                                <p>Description of the artwork</h5>
+                                <div class="contactartist">
+                                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Artist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Constelacion -->
+        <div class="modal fade" id="imgmod2-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1350px!important;" role="document">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="./images/Constelacion.png" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Constelacíon</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="desc" style="padding-top: 20px">
+                                <h5 style="font-weight: bold;">Highlights</h5>
+                                <p>9-12x12</p>
+                                <p>Acrylic and Spray paint on canvas</p>
+                                <p>Handmade</p>
+                                <h5 style="font-weight: bold;">Description</h5>
+                                <p>Acrylic paint and Spray Paint</p>
+                                <p>Heavy duty gallery wrapped canvas</p>
+                                <div class="contactartist">
+                                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Artist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal El Descenso -->
+        <div class="modal fade" id="imgmod3-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1350px!important;" role="document">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="./images/El Descenso.png" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Artwork Title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="desc">
+                                <p>Description of the artwork</p>
+                                <div class="contactartist">
+                                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Artist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal El Fruto -->
+        <div class="modal fade" id="imgmod4-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1350px!important;" role="document">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="./images/El Fruto.png" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Artwork Title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="desc">
+                                <p>Description of the artwork</p>
+                                <div class="contactartist">
+                                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Artist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Las Chinas de Millo-->
+        <div class="modal fade" id="imgmod5-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1350px!important;" role="document">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="./images/Las Chinas de Millo.png" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Artwork Title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="desc">
+                                <p>Description of the artwork</p>
+                                <div class="contactartist">
+                                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Artist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Platanal de Danny -->
+        <div class="modal fade" id="imgmod6-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1350px!important;" role="document">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="./images/Platanal de Danny.png" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Artwork Title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="desc">
+                                <p>Description of the artwork</p>
+                                <div class="contactartist">
+                                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Artist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Heliconia -->
+        <div class="modal fade" id="imgmod7-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1350px!important;" role="document">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="./images/Heliconia.png" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Artwork Title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="desc">
+                                <p>Description of the artwork</p>
+                                <div class="contactartist">
+                                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Artist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Yito Guaguin -->
+        <div class="modal fade" id="imgmod8-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1350px!important;" role="document">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="./images/Yito Gauguin.png" class="img-fluid">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Artwork Title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="desc">
+                                <p>Description of the artwork</p>
+                                <div class="contactartist">
+                                    <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Artist</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Untitled -->
+        <div class="modal fade" id="imgmod9-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 1350px!important;" role="document">
+                <div class="modal-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="./images/Untitiled.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Artwork Title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="desc">
+                            <p>Description of the artwork</p>
+                            <div class="contactartist">
+                                <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Contact Artist</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid artist reveal">
+            <div><h1 style="text-align: center;">Upcoming Artist</h1></div>
+            <div class="row justify-content-evenly artist">
+                <div class="col-md-6 artistpiccontainer">
+                    <div class="artistimg"><img src="./images/upcomingartist.png"></div>
+                </div>
+                <div class="col-md-6 bio">
+
+                    <h2 class="artistpiccontainer">Livia Ortiz Rios</h2>
+                    <div class="artistpiccontainer">
+                        <p>From Arecibo, Puerto Rico and with an MFA from the Memphis College of Art in Studio Arts, Ortiz is based out of New York and 
+                        Puerto Rico. Her art has been displayed at venues in Louisiana and New York, among others. 
+                        She produces her works with oil and spray paint on acetate but also uses other materials.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--Contact Form Modal-->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title w-100 font-weight-bold">Connect With The Artist</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body mx-3">
+                        <div class="md-form mb-5">
+                            <i class="fas fa-user prefix grey-text"></i>
+                            <input type="text" id="form34" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <i class="fas fa-envelope prefix grey-text"></i>
+                            <input type="email" id="form29" class="form-control validate">
+                            <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fas fa-pencil prefix grey-text"></i>
+                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                            <label data-error="wrong" data-success="right" for="form8" >Your message</label>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer d-flex justify-content-center">
+                        <a class="btn btn-primary" data-toggle="modal" href="#ignismyModal">Submit</a>
+                        <div class="modal fade" id="ignismyModal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
+                                    </div>
+                                    
+                                    <div class="modal-body">
+                                        <div class="thank-you-pop">
+                                            <img src="./images/moises.png" alt="">
+                                            <h1>Thank You!</h1>
+                                            <p>Your submission has been received.</p>
+                                            <p>Please allow 3 to 5 business days for the artist to respond.</p>
+                                            <p>Thank you for supporting up and coming artists!</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- End-Contact Modal -->
+
+            <!--Scripts-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+            <script>
+                // Get the button:
+                let mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                    } else {
+                    mybutton.style.display = "none";
+                    }
+                }
+                
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+            </script>
+
+            <div class="container-fluid">
+                <div class="row homeft">
+                    <div class="col-md-6 tilecontainer">
+                        <img class="tile" src="./images/tile.png">
+                    </div>
+                    <div class="col-md-6 ftnav">
+                        <a href="#"><p>Previous Artists</p></a>
+                        <a href="#"><p>Contact</p></a>
+                    </div>
+                </div>
+            </div>
+        
+    </body>
+
+</html>
